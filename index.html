@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Biografi Asty Apriliyani</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      /* Gradasi army + putih */
+      background: linear-gradient(135deg, #4B5320, #ffffff);
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #4B5320; /* army green */
+      color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1.5px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .profile img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 8px solid white;
+      object-fit: cover;
+      /* Kedap-kedip army */
+      box-shadow: 0 0 25px #4B5320;
+      animation: kedipArmy 1.5s infinite alternate;
+    }
+
+    @keyframes kedipArmy {
+      0%   { box-shadow: 0 0 15px #4B5320; }
+      100% { box-shadow: 0 0 40px #6B8E23; }
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    section h2 {
+      color: #4B5320;
+      border-left: 6px solid #4B5320;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Grid dua kolom */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+    @media(max-width: 768px){
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0 30px;
+      background: white;
+      border: 2px solid #4B5320;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    td {
+      padding: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+    td:first-child {
+      font-weight: bold;
+      color: #4B5320;
+      width: 35%;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    p {
+      background: #f9f9f9;
+      padding: 15px 20px;
+      border-left: 5px solid #4B5320;
+      border-radius: 8px;
+      margin: 12px 0;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border: 2px solid #4B5320;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 10px;
+      color: #4B5320;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      background: #f6f6f6;
+    }
+
+    .link-container {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .link-container a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .link-container a:hover {
+      transform: scale(1.08);
+      opacity: 0.9;
+    }
+    .instagram { background: #4B5320; }
+    .drive { background: #6B8E23; } /* olive green */
+    .pencapaian { background: #2E4600; } /* army lebih gelap */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Biografi Asty Apriliyani</h1>
+  </header>
+
+  <div class="profile">
+    <img src="asty.jpg" alt="Foto Asty Apriliyani">
+  </div>
+
+  <section class="grid-2">
+    <!-- Kolom Kiri -->
+    <div>
+      <h2>🪪 Data Diri</h2>
+      <table>
+        <tr><td>Nama</td><td>Asty Apriliyani</td></tr>
+        <tr><td>Tanggal Lahir</td><td>13 April 2008</td></tr>
+        <tr><td>Tempat Lahir</td><td>Lampung Tengah, Lampung</td></tr>
+        <tr><td>Kewarganegaraan</td><td>Indonesia</td></tr>
+      </table>
+
+      <h2>🏫 Riwayat Pendidikan</h2>
+      <table>
+        <tr><td>TK</td><td>TK Satya Dharma Sudjana (2012 - 2014)</td></tr>
+        <tr><td>SD</td><td>SDN 3 Gunung Madu (2014 - 2020)</td></tr>
+        <tr><td>SMP</td><td>MTs PSA Al-furqan (2020 - 2023)</td></tr>
+        <tr><td>SMA</td><td>SMA Gunung Madu (2023 - sekarang)</td></tr>
+      </table>
+
+      <h2>🙋‍♀️ Tentang Saya</h2>
+      <p>
+        Halo, nama saya <b>Asty Apriliyani</b>. Saya anak dari bapak Jasmani dan ibu Kasmiyati. Sejak kecil, saya dikenal sebagai pribadi 
+        yang ceria, gemar mempelajari hal-hal baru, dan selalu berusaha bangkit setiap kali mengalami kegagalan. 
+      </p>
+      <p>
+        Dalam keseharian, saya tidak hanya fokus pada pelajaran, tetapi juga aktif mengikuti berbagai kegiatan sekolah, salah satunya organisasi 
+        <b>kepramukaan</b> yang saya ikuti sejak SMP hingga SMA. Pengalaman tersebut membuat saya lebih percaya diri dan mampu bekerja sama dengan orang lain. 
+      </p>
+      <p>
+        Saya meyakini bahwa kerja keras, doa, serta dukungan dari orang-orang terdekat adalah kunci utama untuk meraih masa depan yang lebih baik.
+      </p>
+    </div>
+
+    <!-- Kolom Kanan -->
+    <div>
+      <h2>🏆 Pencapaian</h2>
+      <div class="grid">
+        <div class="card"><span>🏆</span>Pasukan khusus pramuka MTs PSA Al-furqan (2022-2023)</div>
+        <div class="card"><span>🏆</span>Lomba Tingkat II (LT II) Pramuka, Plung Kencana 2023</div>
+        <div class="card"><span>🏆</span>Penggalang Ramu (2020)</div>
+        <div class="card"><span>🏆</span>Penggalang Rakit (2021)</div>
+        <div class="card"><span>🏆</span>Penggalang Terap (2022)</div>
+        <div class="card"><span>🏆</span>Juara Harapan 2 Kompetisi Sains 2022</div>
+      </div>
+
+      <h2>💡 Karya</h2>
+      <div class="grid">
+        <div class="card"><span>✍️</span>Cipta Puisi</div>
+        <div class="card"><span>🖼️</span>Menggambar Rumah</div>
+        <div class="card"><span>🖼️</span>Menggambar Pointilist Bunga</div>
+        <div class="card"><span>🖼️</span>Menggambar Ikan Paus</div>
+      </div>
+
+      <h2>🎯 Hobi</h2>
+      <div class="grid">
+        <div class="card"><span>📺</span>Nonton Drakor</div>
+        <div class="card"><span>📱</span>Scroll TikTok & Instagram</div>
+        <div class="card"><span>📖</span>Membaca Novel</div>
+        <div class="card"><span>🍳</span>Memasak Sayur, Membuat Kue, Membuat Jelly</div>
+        <div class="card"><span>🏸</span>Bermain Badminton</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="link-container">
+      <a class="instagram" href="https://www.instagram.com/asty1497?igsh=eWt3azdldHppcHo=" target="_blank">📷 Instagram</a>
+      <a class="drive" href="https://drive.google.com/drive/folders/1YL35nNQMiC24KLcYRR7p3QIQVbshRsJX" target="_blank">📂 Karya</a>
+      <a class="pencapaian" href="https://drive.google.com/drive/folders/14QaCRf00XlBbR-9oRHuV_9i13iayf10M" target="_blank">📂 Pencapaian</a>
+    </div>
+  </section>
+
+</body>
+</html>
